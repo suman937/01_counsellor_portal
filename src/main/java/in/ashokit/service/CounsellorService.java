@@ -8,6 +8,8 @@ import in.ashokit.entities.Counsellor;
 @Service
 public interface CounsellorService {
 	
+	public Counsellor findByEmail(String email);
+	
 	public boolean register(Counsellor counsellor);
 	
 	public Counsellor login(String email, String pwd);

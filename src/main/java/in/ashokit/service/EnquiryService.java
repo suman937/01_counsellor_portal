@@ -10,9 +10,9 @@ import in.ashokit.entities.Enquiry;
 @Service
 public interface EnquiryService {
 	
-	public boolean addEnquiry(Enquiry enq);
+	public boolean addEnquiry(Enquiry enq, Integer counsellorId) throws Exception;
 	
-	public List<Enquiry> getAllEnquiries(Enquiry enq);
+	public List<Enquiry> getAllEnquiries(Integer counsellorId);
 	
 	public List<Enquiry> getEnquiriesWithFilter(ViewEnqsFilterRequest filtrReq, Integer counsellorId);
 	
